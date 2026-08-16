@@ -66,6 +66,21 @@ button {
   background: color-mix(in srgb, var(--accent) 12%, var(--bg));
 }
 
+.save-button {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  color: var(--fg);
+  text-align: left;
+  font-size: 1rem;
+}
+
+.save-button.selected {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 24%, var(--bg));
+}
+
 .choice-button.correct {
   border-color: var(--correct);
   background: color-mix(in srgb, var(--correct) 15%, var(--bg));

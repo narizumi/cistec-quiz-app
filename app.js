@@ -493,7 +493,7 @@
       el(
         "button",
         {
-          class: "link-button",
+          class: "save-button" + (saved ? " selected" : ""),
           onclick: () => {
             if (saved) {
               QuizStorage.unsaveQuestion(storage, question.id);
@@ -503,7 +503,7 @@
             render();
           },
         },
-        [saved ? "保存を解除" : "保存"]
+        [saved ? "保存を解除" : "復習リストに追加"]
       )
     );
     return panel;
